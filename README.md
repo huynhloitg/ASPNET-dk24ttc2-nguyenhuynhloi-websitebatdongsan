@@ -57,14 +57,14 @@ Website Tin Tức Nhà Đất là một hệ thống quản lý và đăng tin v
 ### 1. Clone hoặc tải dự án
 
 ```bash
-git clone <repository-url>
-cd MVC_TinTucNhaDat
+git clone https://github.com/huynhloitg/ASPNET-dk24ttc2-nguyenhuynhloi-websitebatdongsan.git
+cd ASPNET-dk24ttc2-nguyenhuynhloi-websitebatdongsan
 ```
 
 ### 2. Cấu hình Database
 
 1. Mở SQL Server Management Studio hoặc sử dụng sqlcmd
-2. Tạo database mới hoặc restore từ file `script.sql` có sẵn
+2. Tạo database mới hoặc restore từ file `House.sql` có sẵn
 3. Cập nhật connection string trong file `Web.config`:
 
 ```xml
@@ -77,10 +77,10 @@ cd MVC_TinTucNhaDat
 
 **Lưu ý**: Thay `YOUR_SERVER\SQLEXPRESS` bằng tên server SQL Server của bạn.
 
-### 3. Restore Database (nếu có file script.sql)
+### 3. Restore Database (nếu có file House.sql)
 
 ```bash
-sqlcmd -S YOUR_SERVER\SQLEXPRESS -d HOUSE -E -i script.sql
+sqlcmd -S YOUR_SERVER\SQLEXPRESS -d HOUSE -E -i House.sql
 ```
 
 ### 4. Mở dự án trong Visual Studio
@@ -103,7 +103,7 @@ sqlcmd -S YOUR_SERVER\SQLEXPRESS -d HOUSE -E -i script.sql
 ## 📁 Cấu trúc dự án
 
 ```
-MVC_TinTucNhaDat/
+ASPNET-dk24ttc2-nguyenhuynhloi-websitebatdongsan/
 ├── WebsiteMVC/
 │   ├── WebsiteMVC/
 │   │   ├── Areas/
@@ -115,7 +115,7 @@ MVC_TinTucNhaDat/
 │   │   ├── Scripts/             # JavaScript files
 │   │   └── Web.config           # Cấu hình ứng dụng
 │   └── WebsiteMVC.sln           # Solution file
-└── script.sql                   # Database script
+└── House.sql                     # Database script
 ```
 
 ## 🗄️ Cấu trúc Database
@@ -186,4 +186,3 @@ Nếu có thắc mắc hoặc cần hỗ trợ, vui lòng tạo issue hoặc li�
 ---
 
 **Lưu ý**: Đây là dự án mẫu, vui lòng cập nhật thông tin liên hệ và tác giả phù hợp với dự án của bạn.
-
